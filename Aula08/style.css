@@ -1,0 +1,92 @@
+/* Reseta margens e define o 'box-sizing' para facilitar o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo principal do corpo da página */
+body {
+    /* Cor de fundo escura */
+    background-color: #121212;
+    
+    /* Cor do texto principal (branco suave) */
+    color: #e0e0e0;
+    
+    /* Fonte mais moderna e legível */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Garante que a página ocupe pelo menos a altura inteira da tela */
+    min-height: 100vh;
+    
+    /* Centraliza o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Um preenchimento para o conteúdo não colar nas bordas em telas pequenas */
+    padding: 20px;
+}
+
+/* Um "container" para o seu conteúdo principal */
+.container {
+    max-width: 800px;
+    width: 100%;
+    
+    /* Fundo um pouco mais claro para destacar o conteúdo */
+    background-color: #1e1e1e;
+    
+    padding: 30px;
+    border-radius: 8px;
+    
+    /* Sombra suave para dar um efeito "flutuante" */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para os títulos */
+h1 {
+    color: #4CAF50; /* Um verde para dar destaque */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Estilo para parágrafos */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 15px;
+}
+
+/* Estilo para links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #81C784;
+    text-decoration: underline;
+}
+
+/* Estilo para listas */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}

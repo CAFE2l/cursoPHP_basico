@@ -10,8 +10,10 @@
     <div>
     <?php
        $valor = $_GET["v"];
-       echo "<h2>O valor enviado foi $valor</h2>"
+       $rq = sqrt($valor);
+       echo "A raiz quadrada de $valor é igual a ". number_format($rq, 2, ".", ",");
     ?>
+    <a href="index.html">voltar</a>
     </div>
 </body>
 </html>
