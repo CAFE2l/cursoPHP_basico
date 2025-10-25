@@ -14,7 +14,7 @@
                 $resultado  = $num * 2;
                 break;
             case 2: 
-                $resultado = $num ^ 3;
+                $resultado = $num^3;
                 break;
             case 3: 
                 $resultado = sqrt($num);
