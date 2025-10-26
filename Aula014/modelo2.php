@@ -7,17 +7,14 @@
 </head>
 <body>
     <?php 
-
         function soma($a, $b){
             $soma = $a + $b;
-            echo"<p>A soma vale $soma</p>";
             return $soma;
         }
-        soma(3,1);
-        soma(4,3);
-        $x = 9;
-        $y = 500;
-        soma($x,$y);
+     $x = 3;
+     $y = 4;
+     $resultado = soma($x, $y);
+     echo "<p>A soma entre $x e $y é $resultado.</p>";
     ?>
 </body>
 </html>
