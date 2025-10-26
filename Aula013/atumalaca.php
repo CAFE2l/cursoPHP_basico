@@ -14,5 +14,7 @@
             echo "$num x $i = $resultado<br>";
         }
     ?>
+
+    <br><a href="javascript:history.go(-1)">Voltar</a>
 </body>
 </html>
