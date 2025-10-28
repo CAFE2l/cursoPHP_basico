@@ -1,0 +1,51 @@
+/* Background animado com degrade mudando de cor */
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Animação do background */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Caixa centralizada para conteúdo */
+div {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  height: 200px;
+  border: 2px solid transparent;
+  animation: borderPulse 3s ease-in-out infinite;
+}
+
+/* Animação suave da borda brilhante */
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: rgba(39, 178, 255, 0.5);
+    box-shadow:
+      0 0 10px 2px rgba(255, 255, 255, 0.3),
+      0 0 30px 5px rgba(39, 178, 255, 0.5),
+      0 0 50px 8px rgba(0, 123, 255, 0.7);
+  }
+  50% {
+    border-color: rgba(39, 178, 255, 0.9);
+    box-shadow:
+      0 0 15px 4px rgba(255, 255, 255, 0.5),
+      0 0 40px 7px rgba(39, 178, 255, 0.8),
+      0 0 60px 12px rgba(0, 123, 255, 1);
+  }
+}
