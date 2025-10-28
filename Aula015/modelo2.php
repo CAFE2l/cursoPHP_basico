@@ -9,12 +9,15 @@
 <body>
 <div>
     <?php 
-     include "funcoes.php";
+     require "funcoes2.php";
+
 
      echo"<h1>Testando novas funções</h1>";
      ola();
 
      mostraValor(4);
+
+     echo"<h2>Finalizando Programa...</h2>"
     ?>
 </div>
 </body>
