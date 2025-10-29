@@ -10,10 +10,14 @@
 <div>
     <pre>
         <?php
-            $num = array(3,5,8,2);
-            $num[] = 7;
-            print_r($num);
+            $vetor = array("nome" => "Ana",
+                            "idade" => 23, 
+                            "peso" => 65.5);
+            foreach($vetor as $cad => $cont){
+                echo"O campo $cad possui o conteúdo $cont<br>";
+            }
         ?>
+
     </pre>
 </div>
 </body>

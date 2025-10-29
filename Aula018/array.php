@@ -9,11 +9,14 @@
 <body>
 <div>
     <pre>
-        <?php
-            $num = array(3,5,8,2);
-            $num[] = 7;
-            print_r($num);
-        ?>
+        <table border="1"><tr>
+            <?php
+               $c = range(5,20,5);
+               foreach($c as $valor){
+                    echo"<td>$valor </td>";
+               }
+            ?>
+        </table>
     </pre>
 </div>
 </body>

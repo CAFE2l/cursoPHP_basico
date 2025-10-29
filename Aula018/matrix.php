@@ -10,9 +10,13 @@
 <div>
     <pre>
         <?php
-            $num = array(3,5,8,2);
-            $num[] = 7;
-            print_r($num);
+            $matriz = array(
+                array(6,5),
+                array(4,9),
+                array(3,2)
+            );
+            $matriz[0][1] = $matriz[2][0];
+            print_r($matriz);
         ?>
     </pre>
 </div>

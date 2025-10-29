@@ -10,9 +10,12 @@
 <div>
     <pre>
         <?php
-            $num = array(3,5,8,2);
-            $num[] = 7;
-            print_r($num);
+            $valor = array ( 0=> 5,
+                             1 => 9,
+                            2 => 8,
+                            3 => 7);
+            unset($valor[2]);
+            print_r($valor);
         ?>
     </pre>
 </div>
