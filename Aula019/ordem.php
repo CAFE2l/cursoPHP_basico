@@ -10,9 +10,9 @@
 <div>
     <pre>
         <?php
-            $vetor = array("A", "J", "M", "X", "K" );
-            $total = count($vetor);
-            echo"O vetor tem $total elementos<br>";
+            $vetor = array(2=>"A", 5=>"J", 0=>"M", 3=>"X", 4=>"K" );
+            print_r($vetor);
+            krsort($vetor);
             print_r($vetor);
             
         ?>

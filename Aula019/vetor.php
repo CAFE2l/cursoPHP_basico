@@ -11,9 +11,11 @@
     <pre>
         <?php
             $vetor = array("A", "J", "M", "X", "K" );
-            $total = count($vetor);
-            echo"O vetor tem $total elementos<br>";
             print_r($vetor);
+           array_unshift($vetor, "O");
+           array_shift($vetor);
+           print_r($vetor);
+           
             
         ?>
     </pre>
