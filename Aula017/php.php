@@ -9,8 +9,8 @@
 <body>
 <div>
     <?php 
-        $frase = "Gosto de estudar Matematica";
-        $noveFrase = str_replace("Matematica", "PHP", $frase);
+        $frase = "Gosto de estudar Matematica, matematica é muito legal!"; 
+        $noveFrase = str_ireplace("matematica", "PHP", $frase);
         echo "$noveFrase";
     ?>
 </div>
